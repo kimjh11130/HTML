@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Nico Times</title>
+    <style>
+      img {
+        border: 5px solid black;
+        border-radius: 50%;
+        transition: transform 2s ease-in-out;
+      }
+      img:hover {
+        transform: matrix(1, 2, 3, 4, 5, 6);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/img/logo.jpg " />
+  </body>
+</html>
+<!-- 
+  - rotate: x,y,z 축 회전 가능
+- scale: 사진의 크기 변화
+- translate 사진 위치 변화
+- transformation 은 box element 를 변형시키지 않는다.
+- transition: root 에 있어야 제대로 적용, 그렇지 않으면 쓰레기(?)됨.
+ㄴ hover인 경우 위에 안올리면 스무스하게 되돌아 오는게 아닌 바로 원상태로 변함(정적)
+ -->

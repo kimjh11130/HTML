@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      div {
+        background-color: teal;
+        height: 200px;
+        width: 200px;
+      }
+      @media screen and (max-width: 600px) {
+        div {
+          background-color: tomato;
+        }
+      }
+      @media screen and (min-width: 601px) and (max-width: 800px) {
+        div {
+          background-color: wheat;
+        }
+      }
+      @media screen and (min-width: 801px) and (max-width: 1200px) and (orientation: landscape) {
+        div {
+          background-color: turquoise;
+        }
+      }
+      span {
+        font-size: 36px;
+      }
+      @media screen and (orientation: landscape) {
+        span {
+          display: none;
+        }
+      }
+      @media print {
+        body {
+          background-color: tomato;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <span>please flip your phone:)</span>
+  </body>
+</html>
+<!-- 
+  media query : 조건을 추가할수있는 방법(코드의 조건)
+-and를 써서 연결한다.
+- media query안에 원하는 css를 넣는다
+
+@media print
+-스크린을 프린트할때 사용
+ -->

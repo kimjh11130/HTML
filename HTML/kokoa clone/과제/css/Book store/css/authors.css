@@ -1,0 +1,20 @@
+.books__authors__detail {
+  display: flex;
+}
+.books__authors__detail img {
+  width: 110px;
+  height: 138px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.books__authors__detail__name {
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+.books__authors__detail__info {
+  margin-top: 15px;
+  font-size: 12px;
+  opacity: 0.3;
+  line-height: 180%;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>The Nico Times</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        /* display: flex는 부모한테만 */
+        height: 100vh; /*vh는 니 화면 크기정도 100vh는 100%*/
+        margin: 20px;
+        display: flex;
+        justify-content: space-around; /*mian axis 가로축*/
+        align-items: stretch; /*cross axis 세로축*/
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        background-color: teal;
+      }
+      #second {
+        background-color: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div id="second"></div>
+    <div></div>
+  </body>
+</html>
+<!-- 
+  1.flexbox
+- 어떤 곳이든 둘수 있음.(유연함)
+- 2차원 레이아웃에서 잘 작동함.
+- 부모 요소에만 사용할 것, 자식 요소에는 사용하지 말 것
+- display:flex
+- justify-content: space-between;(default 수평)
+- align-items(default 수직)
+- 주축(수평), 교차축(수직)
+- body height을 주지 않으면 align-items는 쓰나마나임.
+- height : 100vh; 에서 vh는 viewpoint height 줄임말
+ㄴ 화면 크기에 따라 높이가 정해짐.
+ -->

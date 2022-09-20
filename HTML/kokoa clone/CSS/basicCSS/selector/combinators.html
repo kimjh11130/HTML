@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Nico Times</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      span {
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      /*
+      형제: 동등한 위치
+      자손(부모): 바로 밑에이쓴ㄴ 윛치
+      */
+      p span {
+        /*p안에 있는 span*/
+        color: white;
+      }
+      div > span {
+        /*div 바로 밑에 있는 span (자손)*/
+        text-decoration: underline;
+      }
+      p + span {
+        /*p  바로 다음에 오는 span (형제)*/
+        text-decoration: none;
+      }
+      p ~ span {
+        /*p 바로 뒤에 안와도 형제 관게면 됨 span*/
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        similique ad assumenda ipsum voluptas soluta delectus cumque hic maxime,
+        a fugit repudiandae harum qui doloremque consequatur ut excepturi libero
+        inventore! <span>inside</span>
+      </p>
+      <address>hi</address>
+      <span>hello</span>
+    </div>
+  </body>
+</html>

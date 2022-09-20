@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import "css/reset.css";
+@import "css/header.css";
+@import "css/mainbook.css";
+@import "css/topRank.css";
+@import "css/authors.css";
+html {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 850px;
+  width: 400px;
+  background-color: white;
+}
+.title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  margin: 20px 0px;
+  font-weight: 600;
+}

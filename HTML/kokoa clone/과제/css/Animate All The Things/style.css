@@ -1,0 +1,81 @@
+@keyframes bingle {
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes strentch {
+  0% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(2);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+#container {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightseagreen;
+}
+#first-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 125px;
+  width: 125px;
+  animation: bingle 2s ease-in-out infinite;
+}
+#second-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125px;
+  width: 125px;
+}
+.round {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+}
+.square {
+  width: 8px;
+  height: 30px;
+  margin-left: 5px;
+  background-color: white;
+}
+#second-container div:nth-child(1) {
+  animation: strentch 1s ease-in-out infinite;
+}
+#second-container div:nth-child(2) {
+  animation: strentch 1s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+#second-container div:nth-child(3) {
+  animation: strentch 1s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+#second-container div:nth-child(4) {
+  animation: strentch 1s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+#second-container div:nth-child(5) {
+  animation: strentch 1s ease-in-out infinite;
+  animation-delay: 0.4s;
+}

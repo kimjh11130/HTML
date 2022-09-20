@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Nico Times</title>
+    <style>
+      a {
+        color: wheat;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 55px;
+        transition: color 1s cubic-bezier(0.6, 0, 0.735, 0.045),
+          border-radius 5s ease-in-out, background-color 10s ease-out;
+      }
+      a:hover {
+        color: tomato;
+        border-radius: 20px;
+        background-color: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">Go home</a>
+  </body>
+</html>
+<!-- 
+  1.ease-in function
+- 브라우저에게 애니메이션이 어떻게 변화할지 알려줌.
+
+1) linear: 요소를 직선으로 움직이게 만들어줌. 같은 속도로 움직임.
+2) ease-in: 처음에 좀 더 빨라지면서 움직임.
+3) ease-out: 끝에서 느려짐.
+4) ease-in-out: 처음에 느렸다가 중간에 가속했다가 끝에 느려지면서 끝남.
+
+- https://matthewlein.com/tools/ceaser 에서 확인할 수 있음.
+- linear, ease-in, ease-out, ease-in-out, ease : default로 가짐.
+- cubic-bezier[(Equivalent to cubic-bezier 옵션)] : 나의 애니메이션 만들 때 사용
+-각각 적용하려면 사이에 콤마 찍기
+ -->

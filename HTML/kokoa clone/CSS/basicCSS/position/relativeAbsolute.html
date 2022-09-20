@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Nico Times</title>
+    <style>
+      body {
+        margin: 50px;
+        height: 1000vh;
+        margin: 20px;
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        color: white;
+        background-color: wheat;
+      }
+      .green {
+        background-color: teal;
+        height: 100px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="green"></div>
+    </div>
+  </body>
+</html>
+<!--
+   postion
+
+1.position:static
+- default 적용
+- 레이아웃이 박스를 처음 위치하는 곳에 둠
+
+2.position:relative
+- 요소가 처음 위차한 곳 기준으로 위치를 변경
+- top,bottom,left,right으로 위치 변경 가능
+
+3.positon:absolute
+- top,bottom,left,right으로 위치 변경 가능
+- 가장 가까운 relative 부모를 기준으로 위치 변경
+ -->

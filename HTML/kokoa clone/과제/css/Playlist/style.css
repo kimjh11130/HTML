@@ -1,0 +1,99 @@
+html {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 800px;
+  border: 5px solid aquamarine;
+  background-color: white;
+}
+.navigation-bar {
+  margin-top: 15px;
+  display: flex;
+  width: 350px;
+}
+.navigation-bar span:first-child {
+  font-size: 25px;
+}
+.navigation-bar span:last-child {
+  font-size: 25px;
+  margin-left: 125px;
+}
+.main-song {
+  display: flex;
+}
+.main-song__icon {
+  width: 130px;
+  height: 130px;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid black;
+  border-radius: 20px;
+}
+.main-song div:first-child {
+  font-size: 35px;
+  margin: 5px;
+}
+.main-song div:last-child {
+  font-size: 17px;
+  margin: 5px;
+}
+#buttons {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+.buttons__button {
+  background-color: white;
+  height: 60px;
+  border-radius: 30px;
+  box-shadow: 0px 5px black;
+}
+#buttons button:first-child {
+  border-radius: 15px;
+  width: 150px;
+  font-size: 20px;
+}
+#buttons button:nth-child(2),
+#buttons button:last-child {
+  width: 60px;
+}
+.song {
+  display: flex;
+  width: 300px;
+}
+.song__color {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+#Matagasti {
+  background-color: tomato;
+}
+#Attitude {
+  background-color: palevioletred;
+}
+#Everthing {
+  background-color: blue;
+}
+#Sunflower {
+  background-color: teal;
+}
+.song__info {
+  margin-left: 10px;
+}
+.song__title {
+  font-size: 22px;
+}
+.song__singer {
+  opacity: 0.7;
+}

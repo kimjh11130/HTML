@@ -1,0 +1,17 @@
+.books__topRank__list {
+  display: flex;
+  overflow-x: scroll;
+}
+.books__topRank__list__book {
+  margin-right: 27px;
+}
+.books__topRank__list__book img {
+  width: 80px;
+  height: 120px;
+  border-radius: 10px;
+}
+.books__topRank__list__book__star {
+  margin: 10px 0px;
+  text-align: center;
+  font-size: 8px;
+}
